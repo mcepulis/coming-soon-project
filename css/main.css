@@ -71,30 +71,18 @@ body {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
     .container > .row {
-        width: 300px;
-        margin-left: calc(50% - 150px);
-        background-color: forestgreen;
+        width: 100%;
+        margin-left: 0px;
+        padding: 15px;
+        background-color: rgb(92, 95, 92);
     }
     .container > .row-short {
-        width: 150px;
-        margin-left: calc(50% - 75px);
-        background-color: forestgreen;
+        width: 100%;
+        margin-left: 0px;
+        padding: 15px;
+        background-color: rgb(92, 95, 92);
     }
 }
 
-@media (max-width: 332px) {
-    .container > .row {
-        width: 100%;
-        margin-left: 0px;
-        padding: 15px;
-        background-color: forestgreen;
-    }
-    .container > .row-short {
-        width: 100%;
-        margin-left: 0px;
-        padding: 15px;
-        background-color: forestgreen;
-    }
-}
