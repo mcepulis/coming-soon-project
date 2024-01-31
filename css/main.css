@@ -73,15 +73,28 @@ body {
 
 @media (max-width: 460px) {
     .container > .row {
+        width: 300px;
+        margin-left: calc(50% - 150px);
+        background-color: forestgreen;
+    }
+    .container > .row-short {
+        width: 150px;
+        margin-left: calc(50% - 75px);
+        background-color: forestgreen;
+    }
+}
+
+@media (max-width: 332px) {
+    .container > .row {
         width: 100%;
-        margin-left: 0;
-        padding: 20px;
+        margin-left: 0px;
+        padding: 15px;
         background-color: forestgreen;
     }
     .container > .row-short {
         width: 100%;
-        margin-left: 0;
-        padding: 20px;
+        margin-left: 0px;
+        padding: 15px;
         background-color: forestgreen;
     }
 }
