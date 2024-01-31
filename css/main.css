@@ -1,0 +1,87 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.container {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container > .row {
+    width: 1000px;
+    margin-left: calc(50% - 500px);
+    background-color: pink;
+}
+.container > .row-short {
+    width: 600px;
+    margin-left: calc(50% - 300px);
+    background-color: pink;
+}
+
+@media (max-width: 1100px) {
+    .container > .row {
+        width: 800px;
+        margin-left: calc(50% - 400px);
+        background-color: orange;
+    }
+    .container > .row-short {
+        width: 400px;
+        margin-left: calc(50% - 200px);
+        background-color: orange;
+    }
+}
+
+@media (max-width: 900px) {
+    .container > .row {
+        width: 600px;
+        margin-left: calc(50% - 300px);
+        background-color: aqua;
+    }
+    .container > .row-short {
+        width: 300px;
+        margin-left: calc(50% - 150px);
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 700px) {
+    .container > .row {
+        width: 400px;
+        margin-left: calc(50% - 200px);
+        background-color: violet;
+    }
+    .container > .row-short {
+        width: 200px;
+        margin-left: calc(50% - 100px);
+        background-color: violet;
+    }
+}
+
+@media (max-width: 460px) {
+    .container > .row {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        background-color: forestgreen;
+    }
+    .container > .row-short {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        background-color: forestgreen;
+    }
+}
