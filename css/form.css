@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 100%;
+}
+.form > .form-row {
+    display: flex;
+    width: 100%;
+}
+.form label {
+    font-size: 0;
+}
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 0.6em 0 0.5em;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1em solid #777;
+}
+.form textarea {
+    min-height: calc(2 * 1.2em + 0.1em + 0.5em + 0.6em);
+    height: calc(4 * 1.2em + 0.1em + 0.5em + 0.6em);
+    max-height: calc(10 * 1.2em + 0.1em + 0.5em + 0.6em);
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+}

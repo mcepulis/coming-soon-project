@@ -13,16 +13,52 @@
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- 3rd-party / vendor -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- base -->
+    <!-- components -->
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/mouse.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <!-- custom -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <main>
-        <section class="container bg-primary">
-            <div class="row-short hero">
+        <section class="container hero bg-primary">
+            <div class="row-short">
                 <img class="logo" src="./img/logo.png" alt="Logo">
                 <h1 class="main-title">Coming soon</h1>
                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi ducimus quod praesentium repellendus rem blanditiis qui ipsum consequuntur tenetur harum quaerat, recusandae fuga rerum.</p>
+                <div class="clock">
+                    <div class="time">
+                        <div class="value">413</div>
+                        <div class="label">Days</div>
+                    </div>
+                    <div class="time">
+                        <div class="value">09</div>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div class="time">
+                        <div class="value">35</div>
+                        <div class="label">Minutes</div>
+                    </div>
+                    <div class="time">
+                        <div class="value">37</div>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
+                <form class="form form-sub">
+                    <div class="form-row">
+                        <label for="subscribe-email">El. paštas</label>
+                        <input name="email" id="subscribe-email" type="email" placeholder="Your email here">
+                    </div>
+                    <button class="btn" type="submit">Subscribe now!</button>
+                </form>
+                <div class="mouse"></div>
             </div>
         </section>
 
@@ -31,23 +67,76 @@
                 <div class="column">
                     <h2 class="section-title">About startup</h2>
                     <p class="section-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores accusantium cupiditate quod, deleniti aliquam <a href="#">Matrox</a> mollitia nisi hic optio reprehenderit iusto nemo nobis sequi aliquid totam.</p>
+                    <div class="progress-bar-group">
+                        <div class="progress-bar">
+                            <div class="top">
+                                <div class="label">UX design</div>
+                                <div class="value">89%</div>
+                            </div>
+                            <div class="bottom">
+                                <div style="width: 89%;" class="progress"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="top">
+                                <div class="label">Web design</div>
+                                <div class="value">86%</div>
+                            </div>
+                            <div class="bottom">
+                                <div style="width: 86%;" class="progress"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="top">
+                                <div class="label">Web development</div>
+                                <div class="value">50%</div>
+                            </div>
+                            <div class="bottom">
+                                <div style="width: 50%;" class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="column short">
                     <h2 class="section-title">Have any question?</h2>
                     <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptatum esse explicabo, provident nobis <a href="#">design@example.com</a> excepturi animi sint adipisci eligendi rem quos, tempore dolores reiciendis officia vel distinctio.</p>
+                    <form class="form form-message">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input name="name" id="name" type="text" placeholder="Your name here">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input name="email" id="email" type="email" placeholder="Your email here">
+                        </div>
+                        <div class="form-row">
+                            <label for="text">Message</label>
+                            <textarea name="message" id="text" placeholder="Your message here"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send message</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="container bg-primary">
-        <div class="row">
-            SOCIALS
+        <div class="row socials">
+            <a class="fa fa-facebook" href="#"></a>
+            <a class="fa fa-twitter" href="#"></a>
+            <a class="fa fa-dribbble" href="#"></a>
+            <a class="fa fa-tumblr" href="#"></a>
+            <a class="fa fa-linkedin" href="#"></a>
+            <a class="fa fa-instagram" href="#"></a>
+            <a class="fa fa-rss" href="#"></a>
         </div>
-        <div class="row-short">
-            BOTTOM TEXTS
+        <div class="row-short footer-bottom">
+            <img class="logo" src="./img/logo-white.png" alt="White logo">
+            <p class="label">Lorem, ipsum dolor sit <a href="#">200+</a> consectetur adipisicing elit. Explicabo quidem qui earum perferendis <a href="#">Matrox</a> aliquid sint rem, nihil commodi.</p>
         </div>
     </footer>
+
+    <a href="#" class="btn btn-icon back-to-top fa fa-angle-up"></a>
 </body>
 
 </html>
